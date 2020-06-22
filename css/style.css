@@ -338,7 +338,14 @@ margin-right: auto;
 align-items: center;
 }
 
-
+.footer {
+  Color: white;
+  padding: 15px;
+  background-color: rgb(41, 41, 41);
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-evenly
+}
 
 /* * {
   outline: solid red 2px;
