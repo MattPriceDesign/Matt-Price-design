@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xml:lang="en">
     <head>
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -26,11 +26,12 @@
         </script>
 
 
+
     </head>
 
-
-    <!-- nav -->
     <body id="bsoverride">
+            <!-- nav -->
+
         <nav id="navBar">
             <h4>Matt Price design</h4>
             <div id="navigation">
@@ -51,9 +52,16 @@
                     hi, my name is Matt and I am a user experience designer</h2>
             </div>
 
-            <div id="wimg">
-                <img src="images/oldman.jpg" id="heroface">
-            </div>
+         <!-- Tilt element -->
+            <span id="wimg">
+                <div class=tiltbg  data-tilt>
+                    <img id="headerGif" src="/images/phone-animation-j3hd-psm.gif" alt="phone">                 
+                            <div class="focal">
+                                    <img src="/images/app-animation-j3hd-psm.gif" alt="floating app">
+                            </div>
+                </div>
+            </span>
+            
         </section>
 
         <!-- projects -->
@@ -329,7 +337,11 @@
             </div>
 
 <!-- scripts -->
-<script src="js/index.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+<script type="text/javascript" src="js/index.js"></script>
+<!-- <script src="jquery.js" ></script> Load jQuery first -->
+<script src="/js/tilt.js"></script> <!-- Load Tilt.js library -->
 
         </body>
 </html>
