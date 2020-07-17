@@ -1,0 +1,74 @@
+#follower1 {
+    position: relative;
+    background-color: #000;
+    width: 5em;
+    height: 5em;
+    border-radius: 50px;
+  }
+#follower2 {
+    position: relative;
+    background-color: #000;
+    width: 5em;
+    height: 5em;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.container1 {
+    width: 180px;
+    height: 110px;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    border: 1px solid #000000;
+}
+
+.container2 {
+    width: 180px;
+    height: 110px;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    border: 1px solid #000000;
+}
+.centerdiv {
+    width: 280px;
+    height: 110px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    position: relative;
+  }
+.eyerow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#outside {
+    position: absolute;
+    left: -40px;
+    top: -85px;
+    width: 336px;
+    height: 248px;
+    z-index: 3;
+ }
+ #outside2 {
+    position: absolute;
+    left: -10px;
+    top: -85px;
+    width: 336px;
+    height: 248px;
+    z-index: 3;
+ }
+.fcontain{
+    display: flex;
+    justify-content: center;
+}
+.eyesocket{
+    margin: 50px;
+    height: 100px;
+    width: 100px;
+    background-color: cadetblue;
+}

@@ -7,6 +7,73 @@ max-width: 100vw;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+/* The All Seeing Eye */
+#follower1 {
+    position: relative;
+    width: 5em;
+    height: 5em;
+    border-radius: 50px;
+  }
+#follower2 {
+    position: relative;
+    width: 5em;
+    height: 5em;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.container1 {
+    width: 180px;
+    height: 110px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container2 {
+    width: 180px;
+    height: 110px;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.centerdiv {
+    width: 280px;
+    height: 110px;
+    position: relative;
+
+  }
+  .centerdiv2 {
+    display: none;
+    width: 280px;
+    height: 110px;
+    position: relative;
+  }
+.eyerow {
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#outside {
+    position: absolute;
+    left: -10px;
+    top: -90px;
+    width: 336px;
+    height: 248px;
+    z-index: 3;
+ }
+ #outside2 {
+    position: absolute;
+    left: -10px;
+    top: -85px;
+    width: 336px;
+    height: 248px;
+    z-index: 3;
+ }
+
+/* end of eyes */
 .display-4{
 text-align: center;
 }
@@ -120,9 +187,6 @@ tr:nth-child(odd) {
     margin: 10px;
     margin-left: auto;
     margin-right: auto;
-}
-.sfbackground{
-    /* border: 3px green solid; */
 }
 .sfbackground img{
     width: 90%;
@@ -251,9 +315,7 @@ li {
     float: left;
     width: 50%
 }
-.midcolumn img{
-    /* margin: 10px ; */
-}
+
   .midfi:after {
     content: "";
     display: table;
@@ -270,6 +332,8 @@ li {
 
 /*     
 border: 1px red solid;
+     border: 3px green solid; 
+
  */
  @media (min-width: 576px) { 
      .persona{
@@ -307,6 +371,7 @@ border: 1px red solid;
         grid-row: 1/2;
         border: 0px green solid;
         }
+        
  }
 
  @media screen and (min-width: 768px){
@@ -368,5 +433,73 @@ border: 1px red solid;
         grid-row: 2/3;
         grid-column: 1/3;
     }
+    /* Eye */
+    #follower1 {
+        position: relative;
+        width: 5em;
+        height: 5em;
+        border-radius: 50px;
+      }
+    #follower2 {
+        position: relative;
+        width: 5em;
+        height: 5em;
+        border-radius: 50px;
+        z-index: 1;
+    }
+    
+    .container1 {
+        width: 180px;
+        height: 110px;
+        position: relative;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        /* border: 1px solid #000000; */
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .container2 {
+        width: 180px;
+        height: 110px;
+        position: relative;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        /* border: 1px solid #000000; */
+    }
+    
+    .centerdiv2 {
+        width: 280px;
+        height: 110px;
+        padding-left: 0px;
+        padding-right: 80px;
+        display: block;
+        position: relative;
+      }
+    .eyerow {
+        margin: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #outside {
+        position: absolute;
+        left: -60px;
+        top: -92px;
+        width: 336px;
+        height: 248px;
+        z-index: 3;
+     }
+     #outside2 {
+        position: absolute;
+        left: -40px;
+        top: -92px;
+        width: 336px;
+        height: 248px;
+        z-index: 3;
+     }
 }  
+
  
