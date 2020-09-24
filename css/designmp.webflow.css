@@ -1752,6 +1752,7 @@ figcaption {
 
 .overviewheading.precita {
   margin-top: 140px;
+  margin-bottom: 30px;
 }
 
 .overviewheading.skill2 {
@@ -2235,6 +2236,10 @@ figcaption {
   padding-left: 10px;
 }
 
+.layoutchild.sscreen {
+  display: none;
+}
+
 .paragraph {
   margin-top: 5px;
 }
@@ -2256,17 +2261,20 @@ figcaption {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-box-align: stretch;
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
 }
 
-.layoutcolumn.l {
+.layoutcolumn._1 {
   padding-right: 0px;
 }
 
-.layoutcolumn.r {
+.layoutcolumn._2 {
   padding-left: 0px;
 }
 
@@ -4229,6 +4237,13 @@ figcaption {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  .contentflex.precita.results {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
   .overviewinfo {
     width: 100%;
   }
@@ -4273,8 +4288,18 @@ figcaption {
   .overviewvisual.precita {
     min-width: 100%;
   }
+  .overviewvisual.precita.results {
+    margin-bottom: 0px;
+  }
   .overviewvisual.llink {
     min-width: 100%;
+  }
+  .overviewheading.precita.team {
+    width: 100%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
   }
   .overviewcopy.precita {
     margin-right: 0px;
@@ -4344,6 +4369,12 @@ figcaption {
     margin-right: 10px;
     margin-left: 10px;
   }
+  .layoutchild.lscreen {
+    display: none;
+  }
+  .layoutchild.sscreen {
+    display: block;
+  }
   .logos {
     min-width: 70px;
   }
@@ -4404,6 +4435,21 @@ figcaption {
   }
   .overviewinfoflex {
     width: 100%;
+  }
+  .overviewinfoflex.results {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
   }
   .cta1 {
     width: 300px;
