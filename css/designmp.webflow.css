@@ -96,6 +96,7 @@ ul {
 
 li {
   margin-bottom: 10px;
+  font-weight: 300;
 }
 
 img {
@@ -2518,7 +2519,7 @@ figcaption {
 .desriptionimgcontainer.home {
   display: block;
   width: auto;
-  max-width: 600px;
+  max-width: 800px;
   min-width: 300px;
   margin-right: auto;
   margin-left: auto;
@@ -3070,6 +3071,15 @@ figcaption {
 
 .resumelink {
   display: inline-block;
+  width: 100%;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  text-decoration: none;
+}
+
+.resumelink:hover {
+  color: #464267;
 }
 
 .resumeflex {
@@ -3088,6 +3098,7 @@ figcaption {
 }
 
 .image-11 {
+  display: none;
   border-radius: 15px;
 }
 
@@ -3407,6 +3418,72 @@ figcaption {
 
 .image-14 {
   border-radius: 20px;
+}
+
+.resumecontent {
+  margin: 0px 0px 40px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.resumecontent.name {
+  margin: 0px 0px 5px;
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.resumecontent.name-copy {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.resumecontent.contact {
+  height: auto;
+  margin: 0px 0px 30px;
+  padding-bottom: 5px;
+  border-style: none none solid;
+  border-width: 0px 0px 2px;
+  border-color: #000 #000 #464267;
+  text-align: center;
+}
+
+.resumecontent.h5 {
+  margin: 20px 0px 5px;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.resumecontent.l {
+  margin-bottom: 0px;
+}
+
+.resumecontent.r {
+  margin-bottom: 0px;
+  text-align: right;
+}
+
+.resumecontent.listitem {
+  margin-bottom: 0px;
+}
+
+.resumecontent.list {
+  border-left-style: none;
+  list-style-type: disc;
+}
+
+.resumecontent.listheader {
+  margin-bottom: 0px;
+}
+
+.column-3 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.resumesunheadings {
+  font-weight: 400;
 }
 
 @media screen and (min-width: 1920px) {
@@ -3748,6 +3825,9 @@ figcaption {
     -ms-flex: 1;
     flex: 1;
   }
+  .overviewinfo.ed {
+    width: auto;
+  }
   .overviewvisual {
     margin-right: 0px;
     margin-left: 0px;
@@ -3834,6 +3914,9 @@ figcaption {
   }
   .desriptionimgcontainer.precita {
     margin-right: auto;
+  }
+  .desriptionimgcontainer.home {
+    margin-bottom: 180px;
   }
   .desriptionimgcontainer.intro {
     margin-right: auto;
@@ -3989,6 +4072,30 @@ figcaption {
     -ms-flex-item-align: stretch;
     -ms-grid-row-align: stretch;
     align-self: stretch;
+  }
+  .resumecontent.h5 {
+    line-height: 36px;
+  }
+  .resumecontent.l {
+    margin-bottom: 0px;
+  }
+  .resumecontent.r {
+    margin-bottom: 0px;
+  }
+  .resumecontent.listitem {
+    margin-bottom: 0px;
+  }
+  .resumecontent.list {
+    margin-bottom: 20px;
+    padding-left: 40px;
+    border-left-style: none;
+  }
+  .resumecontent.listheader {
+    margin-bottom: 0px;
+  }
+  .column-3 {
+    padding-right: 0px;
+    padding-left: 0px;
   }
 }
 
@@ -4446,6 +4553,8 @@ figcaption {
   .desriptionimgcontainer.home {
     max-height: none;
     min-height: auto;
+    margin-right: 10px;
+    margin-left: 10px;
   }
   .desriptionimgcontainer.intro {
     width: 90%;
@@ -4559,6 +4668,10 @@ figcaption {
     margin-top: 20px;
     margin-bottom: 60px;
   }
+  .resumelink {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
   .linkcontact.l {
     text-align: center;
   }
@@ -4603,6 +4716,12 @@ figcaption {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+  .bold-text-3 {
+    font-weight: 400;
+  }
+  .bold-text-4 {
+    font-weight: 400;
   }
 }
 
@@ -4901,6 +5020,10 @@ figcaption {
     margin-top: 40px;
     margin-bottom: 60px;
   }
+  .resumelink {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
   .aboutcontainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -5144,3 +5267,17 @@ figcaption {
   }
 }
 
+@font-face {
+  font-family: 'Sf pro text';
+  src: url('../fonts/SF-Pro-Text-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sf pro text';
+  src: url('../fonts/SF-Pro-Text-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
